@@ -1,3 +1,4 @@
+
 console.log("Javascript is alive!");
 
 var hello = document.getElementById("greeting");
@@ -12,13 +13,15 @@ var image = document.createElement("img");
 image.src = "http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif";
 hello.appendChild(image);
 
+
+
 var select = document.getElementById('essentials');
 var list = document.getElementsByTagName('li');
 select.addEventListener('click', function(event){
-  if (event.target.tagName === "LI"){
+  if (event.target.tagName === "li".innerText) {
     for(var i=0; i<list.length; i++){
         list[i].classList.remove('selected');
-        }
+        } 
     event.target.classList.add('selected');
         }
         var newImg = event.target.innerHTML;
@@ -45,9 +48,9 @@ size.addEventListener('mouseleave', function() {
 //   lists.classList.remove('selected');
 // });
 
-var select = document.getElementById('essentials');
+var button = document.getElementById('reset');
 var list = document.getElementsByTagName('li');
-select.addEventListener('click', function(event) {
+button.addEventListener('click', function(event) {
   if (event.target.tagName === "LI"){
     for(var i=0; i<list.length; i++){
         list[i].classList.remove('selected');
@@ -61,6 +64,5 @@ window.addEventListener("keypress", function(e) {
     alert("I HATE NUMBERZZZ!");
   }
 });
-
 
 

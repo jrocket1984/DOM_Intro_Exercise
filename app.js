@@ -18,7 +18,7 @@ hello.appendChild(image);
 var select = document.getElementById('essentials');
 var list = document.getElementsByTagName('li');
 select.addEventListener('click', function(event){
-  if (event.target.tagName === "li".innerText) {
+  if (event.target.tagName === "LI") {
     for(var i=0; i<list.length; i++){
         list[i].classList.remove('selected');
         } 
